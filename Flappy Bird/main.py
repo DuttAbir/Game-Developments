@@ -13,20 +13,20 @@ GROUND_Y = SCREENHEIGHT * 0.8
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
 
-PLAYER = "gallery/images/flappy_bird.png"
-BACKGROUND = "gallery/images/background.png"
-PIPE = "gallery/images/pipe.png"
+PLAYER = "Flappy Bird/gallery/images/flappy_bird.png"
+BACKGROUND = "Flappy Bird/gallery/images/background.png"
+PIPE = "Flappy Bird/gallery/images/pipe.png"
 
-numbers_list = [pygame.image.load("gallery/images/numbers/0-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/1-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/2-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/3-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/4-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/5-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/6-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/7-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/8-number-png.png").convert_alpha(),
-        pygame.image.load("gallery/images/numbers/9-number-png.png").convert_alpha()]
+numbers_list = [pygame.image.load("Flappy Bird/gallery/images/numbers/0-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/1-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/2-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/3-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/4-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/5-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/6-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/7-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/8-number-png.png").convert_alpha(),
+        pygame.image.load("Flappy Bird/gallery/images/numbers/9-number-png.png").convert_alpha()]
 
 for i in range (0,10):
     numbers_list[i] = pygame.transform.scale(numbers_list[i], (40, 40))
@@ -208,19 +208,19 @@ if __name__ == "__main__":
         numbers_list[9],
     )
 
-    GAME_SPRITES['intro'] = pygame.image.load("gallery/images/intro.png").convert_alpha()
+    GAME_SPRITES['intro'] = pygame.image.load("Flappy Bird/gallery/images/intro.png").convert_alpha()
     GAME_SPRITES['intro'] = pygame.transform.scale(GAME_SPRITES['intro'], (400, 400))
-    GAME_SPRITES['base'] = pygame.image.load("gallery/images/flappy-bird-ground.png").convert_alpha()
+    GAME_SPRITES['base'] = pygame.image.load("Flappy Bird/gallery/images/flappy-bird-ground.png").convert_alpha()
     GAME_SPRITES['pipe'] = ( 
         pygame.transform.rotate(pygame.image.load(PIPE).convert_alpha(), 180),
         pygame.image.load(PIPE).convert_alpha()
         )
     
-    GAME_SOUNDS['die'] = pygame.mixer.Sound("gallery/sounds/sfx_die.wav")
-    GAME_SOUNDS['hit'] = pygame.mixer.Sound("gallery/sounds/sfx_hit.wav")
-    GAME_SOUNDS['point'] = pygame.mixer.Sound("gallery/sounds/sfx_point.wav")
-    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound("gallery/sounds/sfx_swoosh.wav")
-    GAME_SOUNDS['wing'] = pygame.mixer.Sound("gallery/sounds/sfx_wing.wav")
+    GAME_SOUNDS['die'] = pygame.mixer.Sound("Flappy Bird/gallery/sounds/sfx_die.wav")
+    GAME_SOUNDS['hit'] = pygame.mixer.Sound("Flappy Bird/gallery/sounds/sfx_hit.wav")
+    GAME_SOUNDS['point'] = pygame.mixer.Sound("Flappy Bird/gallery/sounds/sfx_point.wav")
+    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound("Flappy Bird/gallery/sounds/sfx_swoosh.wav")
+    GAME_SOUNDS['wing'] = pygame.mixer.Sound("Flappy Bird/gallery/sounds/sfx_wing.wav")
 
     GAME_SPRITES['background'] = pygame.image.load(BACKGROUND).convert()
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
